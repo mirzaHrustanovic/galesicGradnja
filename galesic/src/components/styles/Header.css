@@ -1,0 +1,84 @@
+:root {
+  --header-bg-color: #5da698;
+  --information-bg-color: #3e625e;
+  --locationNumberMail-color: #c9dad5;
+}
+
+.main-header {
+  background: var(--header-bg-color);
+}
+.information {
+  background: var(--information-bg-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.information h3 {
+  font-weight: normal;
+}
+.location {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--locationNumberMail-color);
+  margin: 12px;
+  padding: 12px;
+  cursor: pointer;
+}
+.location h3 {
+  margin-left: 12px;
+}
+.location:hover {
+  color: goldenrod;
+}
+.number{
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--locationNumberMail-color);
+  margin: 12px;
+  padding: 12px;
+  cursor: pointer;
+}
+.number h3{
+    margin-left: 12px;
+   
+}
+.number:hover{
+    color:goldenrod;
+}
+.email{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--locationNumberMail-color);
+    margin: 12px;
+    padding: 12px;
+    cursor: pointer;
+}
+.email h3{
+    margin-left: 12px;
+}
+.email:hover{
+    color:goldenrod;
+}
+.flags{
+    display: flex;
+    padding: 15px;
+}
+.bosnian-flag{
+    margin: 10px;
+    padding: 15px;
+    cursor: pointer;
+}
+.german-flag{
+    margin: 10px;
+    padding: 15px;
+    cursor: pointer;
+}
+.english-flag{
+    margin: 10px;
+    padding: 15px;
+    cursor: pointer;
+    
+}
