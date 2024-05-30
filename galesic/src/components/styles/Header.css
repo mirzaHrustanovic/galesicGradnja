@@ -31,8 +31,8 @@
 .location:hover {
   color: goldenrod;
 }
-.number{
-    display: flex;
+.number {
+  display: flex;
   justify-content: space-between;
   align-items: center;
   color: var(--locationNumberMail-color);
@@ -40,45 +40,123 @@
   padding: 12px;
   cursor: pointer;
 }
-.number h3{
-    margin-left: 12px;
-   
+.number h3 {
+  margin-left: 12px;
 }
-.number:hover{
-    color:goldenrod;
+.number:hover {
+  color: goldenrod;
 }
-.email{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: var(--locationNumberMail-color);
-    margin: 12px;
-    padding: 12px;
-    cursor: pointer;
+.email {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--locationNumberMail-color);
+  margin: 12px;
+  padding: 12px;
+  cursor: pointer;
 }
-.email h3{
-    margin-left: 12px;
+.email h3 {
+  margin-left: 12px;
 }
-.email:hover{
-    color:goldenrod;
+.email:hover {
+  color: goldenrod;
 }
-.flags{
-    display: flex;
-    padding: 15px;
+.flags {
+  display: flex;
+  padding: 15px;
 }
-.bosnian-flag{
-    margin: 10px;
-    padding: 15px;
-    cursor: pointer;
+.bosnian-flag {
+  margin: 10px;
+  padding: 15px;
+  cursor: pointer;
 }
-.german-flag{
-    margin: 10px;
-    padding: 15px;
-    cursor: pointer;
+.german-flag {
+  margin: 10px;
+  padding: 15px;
+  cursor: pointer;
 }
-.english-flag{
-    margin: 10px;
-    padding: 15px;
-    cursor: pointer;
-    
+.english-flag {
+  margin: 10px;
+  padding: 15px;
+  cursor: pointer;
+}
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+}
+.main-header__logo {
+  text-indent: 65px;
+  padding: 15px;
+}
+.main-header__logo img {
+  cursor: pointer;
+}
+.main-nav__items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+.main-nav__item {
+  display: flex;
+}
+.main-nav__item a {
+  text-decoration: none;
+  padding: 20px;
+  font-size: 20px;
+  color: var(--information-bg-color);
+}
+.main-nav__item a:hover {
+  color: goldenrod;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  color: var(--information-bg-color);
+  padding: 10px;
+  font-size: 20px;
+
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 6px;
+}
+.dropbtn:hover {
+  color: golderod;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  top: 100%;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  opacity: 1;
+}
+.dropDown {
+  color: var(--locationNumberMail-color);
+  cursor: pointer;
 }
