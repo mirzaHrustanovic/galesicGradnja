@@ -53,7 +53,7 @@ const Header = () => {
             <a href="/">Početna</a>
           </li>
           <li className="main-nav__item">
-            <a href="/o-nama">O nama</a>
+            <a href="#o-nama">O nama</a>
           </li>
           <li className="main-nav__item">
             <div className="dropdown">

@@ -5,7 +5,7 @@ const ImageSlider = ({data}) =>{
     useEffect(() =>{
         const inerval = setInterval(() =>{
             setCurrentSlide((prevSlide)=> (prevSlide+ 1) % data.length);
-        },3000);
+        },5000);
     });
 
     return(
