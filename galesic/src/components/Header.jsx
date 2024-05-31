@@ -4,7 +4,7 @@ import { faPhoneVolume } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import Flag from "react-flagkit";
 import logo from "../assets/Images/logo/muhasLogo4.jpg";
-import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
+import {Link} from "react-router-dom";
 import "./styles/Header.css";
 
 const Header = () => {
@@ -53,25 +53,27 @@ const Header = () => {
             <a href="/">Početna</a>
           </li>
           <li className="main-nav__item">
-            <a href="#o-nama">O nama</a>
+            <Link to="/o-nama">O nama</Link>
           </li>
           <li className="main-nav__item">
             <div className="dropdown">
               <button className="dropbtn">Naše Usluge</button>
-              <FontAwesomeIcon icon={faCaretDown} className="dropDown"/>
+              
               <div className="dropdown-content">
-                <a href="#">Adaptacije</a>
+                <Link to="/adaptacije">Adaptacije</Link>
                 <a href="#">Elektroinstalaterski radovi</a>
                 <a href="#">Vodoinstalaterski radovi</a>
+                <a href="#">Suha gradnja</a>
+                <a href="#">Molerski radovi</a>
                 <a href="#">Uređenje vrta</a>
               </div>
             </div>
           </li>
           <li className="main-nav__item">
-            <a href="/galerija">Galerija</a>
+            <Link to="/galerija">Galerija</Link>
           </li>
           <li className="main-nav__item">
-            <a href="/kontakt">Kontakt</a>
+            <Link to="/kontakt">Kontakt</Link>
           </li>
         </ul>
       </nav>

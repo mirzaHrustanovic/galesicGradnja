@@ -6,6 +6,7 @@
 
 .main-header {
   background: var(--header-bg-color);
+  
 }
 .information {
   background: var(--information-bg-color);
