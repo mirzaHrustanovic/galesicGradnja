@@ -6,8 +6,13 @@ import Flag from "react-flagkit";
 import logo from "../assets/Images/logo/muhasLogo4.jpg";
 import {Link} from "react-router-dom";
 import "./styles/Header.css";
+import { useState } from "react";
+import { languages } from "./languages";
 
 const Header = () => {
+  const [currentLanguage,setCurrentLanguage] = useState("bs");
+  const lang = languages[currentLanguage];
+
   return (
     <header className="main-header">
       <div className="information">
@@ -29,12 +34,14 @@ const Header = () => {
               country="BA"
               role="button"
               onClick={() => {
-                alert("You have clicked bosnian flag");
+                setCurrentLanguage("bs")
               }}
             />
           </div>
           <div className="german-flag">
-            <Flag country="DE" />
+            <Flag country="DE" onClick={() => {
+                setCurrentLanguage("de")
+              }}/>
           </div>
           <div className="english-flag">
             <Flag country="GB" />
@@ -50,14 +57,14 @@ const Header = () => {
         </div>
         <ul className="main-nav__items">
           <li className="main-nav__item">
-            <a href="/">Početna</a>
+            <a href="/">{lang.navbar.home}</a>
           </li>
           <li className="main-nav__item">
-            <Link to="/o-nama">O nama</Link>
+            <Link to="/o-nama">{lang.navbar.about}</Link>
           </li>
           <li className="main-nav__item">
             <div className="dropdown">
-              <button className="dropbtn">Naše Usluge</button>
+              <button className="dropbtn">{lang.navbar.naseUsluge}</button>
               
               <div className="dropdown-content">
                 <Link to="/adaptacije">Adaptacije</Link>
@@ -70,10 +77,10 @@ const Header = () => {
             </div>
           </li>
           <li className="main-nav__item">
-            <Link to="/galerija">Galerija</Link>
+            <Link to="/galerija">{lang.navbar.galerija}</Link>
           </li>
           <li className="main-nav__item">
-            <Link to="/kontakt">Kontakt</Link>
+            <Link to="/kontakt">{lang.navbar.contact}</Link>
           </li>
         </ul>
       </nav>
