@@ -6,6 +6,7 @@ import laminat from "../serviceImage/laminat.jpg";
 import elektro from "../serviceImage/elektro-installation1.jpg";
 import vodo from "../serviceImage/vodo.jpg";
 import rigips from "../serviceImage/rigips.jpg";
+import Contact from "./Contact";
 
 const Adaptation = () => {
   return (
@@ -152,6 +153,7 @@ const Adaptation = () => {
           <img src={rigips} alt="rigips"/>
         </div>
       </div>
+      <Contact/>
     </>
   );
 };

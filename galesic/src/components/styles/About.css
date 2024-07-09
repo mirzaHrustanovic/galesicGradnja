@@ -5,7 +5,7 @@
   height: 50vh; /* Adjust this value as needed */
 }
 .about {
-  color: #5da698;
+  color: #1b6c5c;
   padding: 20px;
   display: flex;
 
@@ -14,6 +14,7 @@
   align-items: center;
   flex-direction: column;
   text-align: center;
+  background: #c9dad5;
 }
 .about h1 {
   text-align: center;
@@ -21,4 +22,7 @@
 }
 .about p {
   font-size: 20px;
+ 
+ 
+
 }

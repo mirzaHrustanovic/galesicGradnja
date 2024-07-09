@@ -60,9 +60,10 @@ const Header = () => {
             <a href="/">{lang.navbar.home}</a>
           </li>
           <li className="main-nav__item">
-            <Link to="/o-nama">{lang.navbar.about}</Link>
+            <Link to="#o-nama">{lang.navbar.about}</Link>
           </li>
           <li className="main-nav__item">
+          <Link to="#naše-usluge"></Link>
             <div className="dropdown">
               <button className="dropbtn">{lang.navbar.naseUsluge}</button>
               
@@ -80,7 +81,7 @@ const Header = () => {
             <Link to="/galerija">{lang.navbar.galerija}</Link>
           </li>
           <li className="main-nav__item">
-            <Link to="/kontakt">{lang.navbar.contact}</Link>
+            <Link to="#kontakt">{lang.navbar.contact}</Link>
           </li>
         </ul>
       </nav>
